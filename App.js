@@ -6,6 +6,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // JSX transpiled before it reaches JS -> PARCEL -> BABEL
 //JSX ==> React.createElement ==> ReactElement-JSObject ==> HTMLElement(render)
-const jsxHeading = <h1 id = "heading">Hello World from JSX</h1>;
+
+const jsxHeading = (
+    <h1 className = "head" tabIndex = "5">
+        Hello World from JSX</h1>
+    );
+
 root.render(heading);
 root.render(jsxHeading);
