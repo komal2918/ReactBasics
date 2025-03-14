@@ -1,0 +1,19 @@
+{
+  "name": "reactbasics",
+  "version": "1.0.0",
+  "description": "Hello Guys, I am learning react.",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komal2918/ReactBasics.git"
+  },
+  "author": "Komal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/komal2918/ReactBasics/issues"
+  },
+  "homepage": "https://github.com/komal2918/ReactBasics#readme"
+}
