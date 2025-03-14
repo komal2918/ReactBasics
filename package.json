@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/komal2918/ReactBasics/issues"
   },
-  "homepage": "https://github.com/komal2918/ReactBasics#readme"
+  "homepage": "https://github.com/komal2918/ReactBasics#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
 }
