@@ -12,7 +12,7 @@ Hello Guys, I am learning react.
  7. import React, ReactDOM from node-modules (Remove react scripts from index.html as why to make extra network call when we can import it from node_modules)
  8. npx parcel build index.html (remove ["main": "App.js"] from package.json) (to generate build)
  - the dev/prod build files are stored in dist folder
-
+9. Make use of scripts to run the commands (npm run start/npm start, npm run build)
 
 #Dev Dependency vs normal dependency ? 
  - Dev Dependency is used only in development phase while other dependencies are used even in the production like parcel is dev dependency.
