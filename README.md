@@ -35,3 +35,8 @@ Hello Guys, I am learning react.
 - Tree Shaking - remove unused code 
 - Different dev and production builds
 
+JSX is not a valid javascript object as it can't be understood by javascript engines/browsers. The JS engines or browsers understand only ecmascript(es6, other versions of es). The jSX is transpiled to React Elements using Babel. 
+
+Role of Babel ? 
+1. Transpilation of JSX code to React Elements 
+2. transpilation of es6 code to the required version that can be understood by older browsers.
