@@ -40,3 +40,14 @@ JSX is not a valid javascript object as it can't be understood by javascript eng
 Role of Babel ? 
 1. Transpilation of JSX code to React Elements 
 2. transpilation of es6 code to the required version that can be understood by older browsers.
+
+Components : 
+- Class based components - older way of creating components (legacy code is written using class based components)
+- functional components  - newer way of creating components (widely used) => it is simply a function that returns a piece of JSX(react elements)
+
+Rules for creating components : 
+- name of component must starts with a capital letter, 
+- to render component pass the component to render function like "render(<HeadingComponent/>)"
+
+Component Composition : 
+- When a component is used inside other component it is called component composition

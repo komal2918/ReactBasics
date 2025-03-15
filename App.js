@@ -12,5 +12,18 @@ const jsxHeading = (
         Hello World from JSX</h1>
     );
 
+// Functional Components
+const HeadingComponent = () => {
+    return (
+        <h1 className = "heading">Hello World Using Functional Component</h1>
+    );  
+};
+
+const HeadingComponent2 = () => (
+    <h1 className = "heading">Hello World Using Functional Component2</h1>
+);
+
 root.render(heading);
 root.render(jsxHeading);
+root.render(<HeadingComponent/>);
+root.render(<HeadingComponent2/>);
