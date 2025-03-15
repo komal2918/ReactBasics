@@ -7,15 +7,18 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // JSX transpiled before it reaches JS -> PARCEL -> BABEL
 //JSX ==> React.createElement ==> ReactElement-JSObject ==> HTMLElement(render)
 
-const jsxHeading = (
-    <h1 className = "head" tabIndex = "5">
-        Hello World from JSX</h1>
-    );
-
 // Functional Components
+const Title = () => {
+    return <h1 className = "head" tabIndex = "5">Namaste React🚀</h1>
+};
+    
+// Component Composition - use of one component inside other component
 const HeadingComponent = () => {
     return (
+        <div id = "container">
+        <Title/>
         <h1 className = "heading">Hello World Using Functional Component</h1>
+        </div>
     );  
 };
 
@@ -23,7 +26,5 @@ const HeadingComponent2 = () => (
     <h1 className = "heading">Hello World Using Functional Component2</h1>
 );
 
-root.render(heading);
-root.render(jsxHeading);
+
 root.render(<HeadingComponent/>);
-root.render(<HeadingComponent2/>);
