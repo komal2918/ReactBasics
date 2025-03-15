@@ -11,12 +11,17 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const Title = () => {
     return <h1 className = "head" tabIndex = "5">Namaste React🚀</h1>
 };
+
+const element = (<span>React Element</span>);
     
 // Component Composition - use of one component inside other component
 const HeadingComponent = () => {
     return (
         <div id = "container">
+        {Title()}
         <Title/>
+        <Title></Title>
+        {element}
         <h1 className = "heading">Hello World Using Functional Component</h1>
         </div>
     );  

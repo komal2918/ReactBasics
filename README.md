@@ -51,3 +51,6 @@ Rules for creating components :
 
 Component Composition : 
 - When a component is used inside other component it is called component composition
+
+{} => can be used to put any javascript/react code inside it (like mathametical calculations, react element can be put in the {} to render it in a react component)
+<HeadingComponent/> or <HeadingComponent></HeadingComponent>, <HeadingComponent()> all these are same
