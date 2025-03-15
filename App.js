@@ -1,35 +1,67 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-const heading = React.createElement("h1", {id : "heading"}, "This is Hello World from ReactJS");
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-// JSX transpiled before it reaches JS -> PARCEL -> BABEL
-//JSX ==> React.createElement ==> ReactElement-JSObject ==> HTMLElement(render)
-
-// Functional Components
-const Title = () => {
-    return <h1 className = "head" tabIndex = "5">Namaste React🚀</h1>
-};
-
-const element = (<span>React Element</span>);
-    
-// Component Composition - use of one component inside other component
-const HeadingComponent = () => {
+const Header = () => {
     return (
-        <div id = "container">
-        {Title()}
-        <Title/>
-        <Title></Title>
-        {element}
-        <h1 className = "heading">Hello World Using Functional Component</h1>
+        <div className = "header">
+            <div className = "logo-container">
+                <img className = "logo" src = "https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png"></img>
+            </div>
+            <div className = "nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
         </div>
-    );  
+    );
 };
 
-const HeadingComponent2 = () => (
-    <h1 className = "heading">Hello World Using Functional Component2</h1>
-);
+const RestaurantCard = () => {
+    return (
+        <div className = "res-card">
+            <img className = "res-card-img" alt = "res-log" src = "https://b.zmtcdn.com/data/pictures/8/20274588/281c1326d90a6b5d70ad3a2542a7b87d_o2_featured_v2.jpg"></img>
+           <h3>Meghana Foods</h3>
+           <h4>Biryani, North Indian, Asian </h4>
+           <h4>4.4 stars</h4>
+           <h4>38 minutes</h4>
+        </div>
+    );
+};
 
+const Body = () => {
+    return (
+        <div className ="body">
+           <div className = "search">Search</div>
+           <div className = "restaurant-container">
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            <RestaurantCard></RestaurantCard>
+            </div> 
+        </div>
+    );
+};
 
-root.render(<HeadingComponent/>);
+const AppLayout = () => {
+    return (
+        <div className = "app">
+            <Header></Header>
+            <Body></Body>
+        </div>
+    );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout></AppLayout>)
