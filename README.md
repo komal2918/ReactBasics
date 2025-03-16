@@ -56,3 +56,13 @@ Component Composition :
 <HeadingComponent/> or <HeadingComponent></HeadingComponent>, <HeadingComponent()> all these are same
 
 - not using keys (not acceptable) <<< using indexes as key (not recommended) <<< using unique key(recommended)
+
+Two types of import/export : 
+1. Default import/export : 
+- export default Component/Variable name
+- import Component from "path"
+
+2. Named import/export : 
+- export const Component
+- import {Component} from "path"
+
