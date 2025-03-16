@@ -66,3 +66,11 @@ Two types of import/export :
 - export const Component
 - import {Component} from "path"
 
+#React Hooks : Whenever a state variable changes, React re-renders the component.
+(Normal JS utility functions)
+- useState()   =>  const [listOfRestaurants, setListOfRestaurants] = useState(resList); returns an array, whenever the function setListOfRestaurants() will get called, it will trigger an event to update the DOM.
+- useEffect() =>
+
+#React Reconciliation Algorithm : 
+React maintains a virtual dom(respresentation of actual DOM or simply JS object representation of DOM) and efficiently find out diff between the previous virtual DOM and updated virtual DOM and based on the diff it updates the actual DOM. 
+https://github.com/acdlite/react-fiber-architecture

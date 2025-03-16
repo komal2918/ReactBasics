@@ -49,3 +49,8 @@
     border: 1px solid #ccc;
     border-radius: 10px;
 }
+
+.filter-button {
+    margin : 10px;
+    cursor: pointer;
+}
