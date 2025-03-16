@@ -2064,25 +2064,13 @@ const RestaurantCard = (props) => {
     );
 };
 
+// not using keys (not acceptable) <<< using indexes as key (not recommended) <<< using unique key (recommended)
 const Body = () => {
     return (
         <div className ="body">
            <div className = "search">Search</div>
            <div className = "restaurant-container">
-            <RestaurantCard resObj = {resList[0]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[1]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[2]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[3]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[4]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[5]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[6]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[7]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[8]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[9]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[10]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[11]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[12]}></RestaurantCard>
-            <RestaurantCard resObj = {resList[13]}></RestaurantCard>
+            {resList.map((resObj) => <RestaurantCard key = {resObj.info.id} resObj = {resObj}></RestaurantCard>)}
             </div> 
         </div>
     );

@@ -54,3 +54,5 @@ Component Composition :
 
 {} => can be used to put any javascript/react code inside it (like mathametical calculations, react element can be put in the {} to render it in a react component)
 <HeadingComponent/> or <HeadingComponent></HeadingComponent>, <HeadingComponent()> all these are same
+
+- not using keys (not acceptable) <<< using indexes as key (not recommended) <<< using unique key(recommended)
